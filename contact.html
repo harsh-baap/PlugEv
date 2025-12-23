@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <style>
+      body {
+        background: url("https://www.transparenttextures.com/patterns/stardust.png"),
+          #222;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Electric border wrapper */
+      .electric-wrapper {
+        padding: 4px;
+        border-radius: 18px;
+        background: linear-gradient(90deg, #00eaff, #0066ff, #00eaff);
+        background-size: 300% 300%;
+        animation: electricMove 2s linear infinite;
+        box-shadow: 0 0 25px #00eaff;
+      }
+
+      /* Inner box */
+      .contact-box {
+        background: rgba(0, 0, 0, 0.85);
+        padding: 40px 60px;
+        border-radius: 14px;
+        text-align: center;
+        color: aliceblue;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 25px;
+        font-size: 18px;
+      }
+
+      a {
+        color: #00eaff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-shadow: 0 0 10px #00eaff;
+      }
+
+      @keyframes electricMove {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 300% 50%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="electric-wrapper">
+      <div class="contact-box">
+        <h1>Contact Me :</h1>
+        <p>
+          Gmail:
+          <a href="mailto:h8434885@gmail.com"> h8434885@gmail.com </a>
+        </p>
+        <p>
+          Mobile No:
+          <a href="tel:+917498886372"> +91 7498886372 </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
